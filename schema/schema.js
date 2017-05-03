@@ -6,6 +6,15 @@ const {
     GraphQLInt
 } = graphql;
 
+// =========================================
+// Static user library to test functionality
+// =========================================
+const users = [
+    { id: '23', firstName: 'Bill', age: 20},
+    { id: '47', firstName: 'Sammy', age: 28}
+];
+// =========================================
+
 const UserType = new GraphQLObjectType({
     name: 'User',
     fields: {
